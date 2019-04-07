@@ -11,6 +11,9 @@ const appRoutes: Routes = [
     path: 'login',
     component: LoginComponent
   }, {
+    path: 'car',
+    component: CartComponent
+  }, {
     path: '**',
     component: LoginComponent
   }
