@@ -1,0 +1,43 @@
+h1 {
+  text-align: center;
+  color: rgb(153, 18, 45);
+}
+.login-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+  align-items: center;
+}
+
+.login-form {
+  padding: 25px;
+  background-color: rgb(92, 161, 96);
+  align-self: center;
+  align-items: center;
+}
+.login-logo > img {
+  object-fit: cover;
+  width: 250px;
+  display: block;
+  height: 250px;
+  margin: 5px 100px 5px 100px;
+}
+.form-group {
+  margin: 5px 100px 5px 100px;
+}
+.login-form {
+  width: 450px;
+  height: 550px;
+  border: solid darkblue 5px;
+}
+.btn-login {
+  background-color: darkblue;
+  color: white;
+  width: 100px;
+  float: right;
+  margin-right: 90px;
+}
+.form-control {
+  width: 250px;
+  height: 20px;
+}

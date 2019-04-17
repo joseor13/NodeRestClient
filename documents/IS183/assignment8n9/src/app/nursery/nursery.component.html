@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary main-nav"></nav>
+    <button class="new-item" (click)="createPlant()">Add New Plant</button> 
+
+<div class="contact-grid">
+  <div class="gallery-grid">
+    <mat-card class="example-card" *ngFor="let nursery of plants; let i = index">
+      <mat-card-content>
+        <img class="cover" [src]="nursery.image_url" alt="Image">
+        <p>
+          <label for="image">Image URL: </label>
+          <input [(ngModel)]="nursery.image_url"  type="text" class="form-control" placeholder="Image"
+            aria-label="Image">
+        </p>
+        <p>
+          <label for="id">ID: </label>
+          <input [(ngModel)]="nursery.id" disabled type="text" class="form-control" placeholder="ID" aria-label="ID">
+        </p>
+        <p>
+          <label for="plant">Plant: </label>
+          <input [(ngModel)]="nursery.plant" type="text" class="form-control" placeholder="Plant" aria-label="price"
+            aria-describedby="basic-addon1">
+        </p>
+        <p>
+          <label for="price">Price: </label>
+          <input [(ngModel)]="nursery.price" type="text" class="form-control" placeholder="Price" aria-label="price"
+            aria-describedby="basic-addon1">
+        </p>
+        <p>
+          <label for="description">Description: </label>
+          <input [(ngModel)]="nursery.description" type="text" class="form-control" placeholder="Description"
+            aria-label="desc" aria-describedby="basic-addon1">
+        </p>
+        <p>
+          <label for="color">Color: </label>
+          <input [(ngModel)]="nursery.color" type="text" class="form-control" placeholder="Color" aria-label="price"
+            aria-describedby="basic-addon1">
+        </p>
+        <p>
+          <label for="quantity">Quantity: </label>
+          <input [(ngModel)]="nursery.quantity" type="text" class="form-control" placeholder="Quantity" aria-label="qty"
+            aria-describedby="basic-addon1">
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <div class="btn-group pull-right">
+          <button mat-raised-button color="primary" class="pull-right" (click)="updatePlant(nursery)">Save</button>
+          <button mat-raised-button color="warn" (click)="removePlant(nursery, i)">Delete</button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

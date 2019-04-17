@@ -1,0 +1,17 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+  <mat-toolbar-row>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary main-nav">
+        <img class="brand" src="../../assets/alcatras.jpg" alt="brand">
+      <div class="collapse" id="navbarSupportedContent">
+       
+            <button class="nav-link1" [routerLink]="['']">Home</button>
+          
+            <button class="nav-link2" (click)="showAbout()">About</button>
+         
+        <div>
+          <button mat-raised-button class="btn-logout" *ngIf="!currentUser" (click)='logout()'>Logout</button>
+        </div>
+      </div>
+    </nav>
+  </mat-toolbar-row>
+</mat-toolbar>

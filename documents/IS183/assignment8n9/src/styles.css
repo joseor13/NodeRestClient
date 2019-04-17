@@ -1,0 +1,18 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(110, 151, 187);
+}
+.mat-toolbar.mat-primary {
+  background: #343434;
+  color: #fff;
+}
+
+.mat-raised-button.mat-primary {
+  background-color: #343434;
+  color: #FFF;
+}
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,69 @@
+a {
+  text-decoration: none;
+  color: #ffe503;
+}
+.nav-action-container {
+  margin: 20px auto;
+  width: 90%;
+}
+.main-nav {
+  padding: 10px 5%;
+  width: 100%;
+  background-color: transparent !important;
+}
+.contact-button{
+  margin-right: 9px;
+  float:right;
+}
+.contact-grid {
+  display:grid;
+  margin: 20px auto;
+  width: 90%;
+  height: 80vh;
+  max-height: 80vh;
+  overflow: auto;
+}
+.edit-mode {
+  background-color: #ffe503 !important;
+}
+
+.brand {
+  height: 60px;
+  float: left;
+  margin-top: 22px;
+  width: 100px;
+}
+.btn-group {
+  background-color: darkblue;
+  float: right;
+}
+.btn-logout {
+  background-color: darkred;
+  color: white;
+  margin-top: -70px;
+  float: right;
+}
+.nav-link1 {
+  margin-left: 50px;
+  background-color: black;
+  color: yellowgreen;
+  width: 70px;
+  margin-top: 40px; 
+  height: 30px;
+}
+.nav-link2 {
+  margin-left: 40px;
+  background-color: black;
+  color: yellowgreen;
+  width: 70px;
+  height: 30px;
+  margin-bottom: 30px;
+}
+.nav-link1:hover {
+  color: red;
+  background-color: navy;
+}
+.nav-link2:hover {
+  color: red;
+  background-color: navy;
+}
